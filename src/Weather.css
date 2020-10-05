@@ -1,0 +1,97 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #fddb92;
+  border-color: #fddb92;
+}
+.btn.btn-primary:hover {
+  color: #fff;
+  background-color: #ec6e4b;
+  border-color: #ec6e4b;
+}
+
+.btn.btn-light {
+  color: #fff;
+  background-color: #fddb92;
+  border-color: #fddb92;
+}
+
+.btn.btn-light:hover {
+  color: #fff;
+  background-color: #ec6e4b;
+  border-color: #ec6e4b;
+}
+
+.col-2 {
+  text-align: center;
+}
+.col-2 img {
+  width: 100%;
+}
+
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+}
+.weather-app-wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.weather-app {
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  border: 2px solid #fddb92;
+  font-family: 'IM Fell English', serif;
+  font-weight: 400;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.weather-forecast {
+  margin-top: 10px;
+}
+.weather-forecast h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  padding-top: 7px;
+}
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.units .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
+}
