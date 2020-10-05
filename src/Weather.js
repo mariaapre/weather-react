@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Forecast from "./Forecast";
 import "./Weather.css";
+import './App.css';
 
 export default function Weather() {
     let weatherData = {
