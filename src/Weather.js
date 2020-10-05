@@ -91,7 +91,7 @@ export default function Weather() {
                     <small>
                         <a
                             href="https://github.com/mariaapre/weather-react"
-                            target="_blank"
+                            target="/"
                         >
                             Open-source code{" "}
                         </a>
