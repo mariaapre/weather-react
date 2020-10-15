@@ -57,12 +57,12 @@ strong {
 }
 .weather-app {
   background-image: linear-gradient(
-    to right top,
-    #762449,
-    #70265c,
-    #632d6f,
-    #493781,
-    #02418f
+    to right bottom,
+    #7c4a6a,
+    #7b5583,
+    #71629b,
+    #5b71b2,
+    #2b81c3
   );
   border: 2px solid #fddb92;
   font-family: "Montserrat", sans-serif;
