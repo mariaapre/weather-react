@@ -1,61 +1,61 @@
-ul {
+.Weather ul {
   margin: 0;
   padding: 0;
 }
-li {
+.Weather li {
   list-style: none;
   text-transform: capitalize;
   margin: 0;
   padding: 0;
 }
 
-strong {
+.Weather strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
 }
 
-.btn.btn-primary {
+.Weather .btn.btn-primary {
   color: #fff;
   background-color: #fddb92;
   border-color: #fddb92;
 }
-.btn.btn-primary:hover {
+.Weather .btn.btn-primary:hover {
   color: #fff;
   background-color: #ec6e4b;
   border-color: #ec6e4b;
 }
 
-.btn.btn-light {
+.Weather .btn.btn-light {
   color: #fff;
   background-color: #fddb92;
   border-color: #fddb92;
 }
 
-.btn.btn-light:hover {
+.Weather .btn.btn-light:hover {
   color: #fff;
   background-color: #ec6e4b;
   border-color: #ec6e4b;
 }
 
-.col-2 {
+.Weather .col-2 {
   text-align: center;
 }
-.col-2 img {
+.Weather .col-2 img {
   width: 100%;
 }
 
-.units {
+.Weather .units {
   position: relative;
   font-size: 16px;
   top: -32px;
 }
-.weather-app-wrapper {
+.Weather .weather-app-wrapper {
   margin: 0 auto;
   max-width: 600px;
 }
-.weather-app {
+.Weather .weather-app {
   background-image: url(https://www.healthwire.co/wp-content/uploads/2020/07/weather.png);
   background-size: cover;
   border: 2px solid #fddb92;
@@ -70,17 +70,17 @@ strong {
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.weather-forecast {
+.Weather .weather-forecast {
   margin-top: 10px;
 }
-.weather-forecast h3 {
+.Weather .weather-forecast h3 {
   font-size: 14px;
   font-weight: 400;
   text-align: center;
   height: 15px;
   padding-top: 7px;
 }
-.weather-forecast-temperature {
+.Weather .weather-forecast-temperature {
   text-align: center;
   font-size: 13px;
   font-weight: 400;
@@ -89,10 +89,10 @@ strong {
   white-space: nowrap;
 }
 
-.units .active {
+.Weather .units .active {
   color: rgb(33, 33, 33);
   cursor: default;
 }
-.units .active:hover {
+.Weather .units .active:hover {
   text-decoration: none;
 }
