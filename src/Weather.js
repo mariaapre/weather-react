@@ -89,10 +89,7 @@ export default function Weather() {
             <div className="row weather-forecast"></div>
           </div>
           <small>
-            <a
-              href="https://github.com/mariaapre/weather-react"
-              target="_blank"
-            >
+            <a href="https://github.com/mariaapre/weather-react" target="/">
               Open-source code{" "}
             </a>
             by Maria Apreza
