@@ -19,7 +19,7 @@ export default function Weather() {
       <div className="container">
         <div className="weather-app-wrapper">
           <div className="weather-app">
-            <form class="mb-3">
+            <form className="mb-3">
               <div className="row">
                 <div className="col-6">
                   <input

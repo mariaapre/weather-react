@@ -56,7 +56,14 @@ strong {
   max-width: 600px;
 }
 .weather-app {
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  background-image: linear-gradient(
+    to right top,
+    #762449,
+    #70265c,
+    #632d6f,
+    #493781,
+    #02418f
+  );
   border: 2px solid #fddb92;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
