@@ -56,14 +56,8 @@ strong {
   max-width: 600px;
 }
 .weather-app {
-  background-image: linear-gradient(
-    to right bottom,
-    #7c4a6a,
-    #7b5583,
-    #71629b,
-    #5b71b2,
-    #2b81c3
-  );
+  background-image: url(https://www.healthwire.co/wp-content/uploads/2020/07/weather.png);
+  background-size: cover;
   border: 2px solid #fddb92;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
