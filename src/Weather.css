@@ -58,7 +58,7 @@ strong {
 .weather-app {
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   border: 2px solid #fddb92;
-  font-family: 'IM Fell English', serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   height: auto;
   margin: 0 auto;
