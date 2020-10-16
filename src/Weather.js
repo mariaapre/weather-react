@@ -14,7 +14,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       sunrise: response.data.sys.sunrise,
-      sunset: response.date.sys.sunset,
+      sunset: response.data.sys.sunset,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
     });
@@ -32,7 +32,7 @@ export default function Weather(props) {
                       type="search"
                       placeholder="Enter city"
                       className="form-control"
-                      autocomplete="off"
+                      autoComplete="off"
                     />
                   </div>
                   <div className="col-3">
