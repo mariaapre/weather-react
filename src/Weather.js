@@ -4,12 +4,13 @@ import axios from "axios";
 import "./Weather.css";
 import "./App.css";
 
-export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+export default function Weather(props) {
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     setWeatherData({
+      ready: true,
       city: response.data.name,
+      date: "Thursday 09:50",
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       sunrise: response.data.sys.sunrise,
@@ -17,9 +18,8 @@ export default function Weather() {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
     });
-    setReady(true);
   }
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <div className="container">
@@ -53,7 +53,7 @@ export default function Weather() {
                 </div>
               </form>
               <ul>
-                <li>TODAYS DATE PLACE HOLDER</li>
+                <li>{weatherData.date}</li>
               </ul>
               <h1> {weatherData.city} </h1>
               <div className="row">
@@ -82,7 +82,9 @@ export default function Weather() {
                     |<a href="/">°F</a>
                   </span>
                   <ul>
-                    <li>{weatherData.description}</li>
+                    <li className="text-capitalize">
+                      {weatherData.description}
+                    </li>
                     <li>
                       Sunrise: <span>{weatherData.sunrise}</span>
                     </li>
@@ -107,8 +109,7 @@ export default function Weather() {
     );
   } else {
     const apiKey = "bd8ecef3a5464b3533486b9092216486";
-    let city = "Phoenix";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
