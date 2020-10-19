@@ -2,3 +2,7 @@
   margin: 5px 0;
   text-align: center;
 }
+body {
+  background-image: url(https://unsplash.com/photos/F6Da4r2x5tohttps://www.healthwire.co/wp-content/uploads/2020/07/weather.png);
+  background-size: cover;
+}
