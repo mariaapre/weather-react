@@ -27,7 +27,7 @@ export default function MainWeather(props) {
           </ul>
         </div>
         <div className="col-6">
-          <div className="Circle">
+          <div className="rounded-circle">
             <WeatherIcon code={props.data.icon} />
           </div>
           <TemperatureUnits celsius={props.data.temperature} />

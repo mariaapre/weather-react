@@ -22,9 +22,9 @@
   border-color: #106b18;
 }
 .Weather .btn.btn-primary:hover {
-  color: #fff;
-  background-color: #ec6e4b;
-  border-color: #ec6e4b;
+  color: #106b18;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .Weather .btn.btn-light {
@@ -34,16 +34,18 @@
 }
 
 .Weather .btn.btn-light:hover {
-  color: #fff;
-  background-color: #ec6e4b;
-  border-color: #ec6e4b;
+  color: #106b18;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .Weather .col-2 {
   text-align: center;
 }
-.Weather .col-2 img {
+.Weather .col-2 canvas {
   width: 100%;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .Weather .units {
@@ -61,8 +63,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   height: auto;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 30px auto;
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
