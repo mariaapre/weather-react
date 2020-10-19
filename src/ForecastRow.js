@@ -3,7 +3,7 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function ForecastRow(props) {
   function hours() {
-    let date = new Date(props.data.dt * 100);
+    let date = new Date(props.data.dt * 1000);
     let hours = date.getHours();
     return `${hours}:00`;
   }

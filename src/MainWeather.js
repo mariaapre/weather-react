@@ -27,7 +27,7 @@ export default function MainWeather(props) {
           </ul>
         </div>
         <div className="col-6">
-          <div className="float-left">
+          <div className="Circle">
             <WeatherIcon code={props.data.icon} />
           </div>
           <TemperatureUnits celsius={props.data.temperature} />
@@ -45,14 +45,6 @@ export default function MainWeather(props) {
       </div>
       <h4>Weekly forecast:</h4>
       <div className="row weather-forecast"></div>
-      <div>
-        <small>
-          <a href="https://github.com/mariaapre/weather-react" target="/">
-            Open-source code{" "}
-          </a>
-          by Maria Apreza
-        </small>
-      </div>
     </div>
   );
 }

@@ -42,42 +42,38 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <div className="container">
-          <div className="weather-app-wrapper">
-            <div className="weather-app">
-              <form className="mb-3" onSubmit={handleSubmit}>
-                <div className="row">
-                  <div className="col-6">
-                    <input
-                      type="search"
-                      placeholder="Enter city"
-                      className="form-control"
-                      autoComplete="off"
-                      autoFocus="on"
-                      onChange={handleCityChange}
-                    />
-                  </div>
-                  <div className="col-3">
-                    <input
-                      type="submit"
-                      value="Search"
-                      className="btn btn-primary w-100"
-                    />
-                  </div>
-                  <div className="col-3">
-                    <button
-                      type="button"
-                      className="btn btn-light location-button w-50"
-                    >
-                      <i className="fas fa-map-marker-alt"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-              <MainWeather data={weatherData} />
-              <ForecastIntro city={weatherData.city} />
+        <div className="weather-app">
+          <form className="mb-3" onSubmit={handleSubmit}>
+            <div className="row">
+              <div className="col-6">
+                <input
+                  type="search"
+                  placeholder="Enter city"
+                  className="form-control"
+                  autoComplete="off"
+                  autoFocus="on"
+                  onChange={handleCityChange}
+                />
+              </div>
+              <div className="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  className="btn btn-primary w-100"
+                />
+              </div>
+              <div className="col-3">
+                <button
+                  type="button"
+                  className="btn btn-light location-button w-50"
+                >
+                  <i className="fas fa-map-marker-alt"></i>
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
+          <MainWeather data={weatherData} />
+          <ForecastIntro city={weatherData.city} />
         </div>
       </div>
     );

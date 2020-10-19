@@ -4,8 +4,8 @@ import axios from "axios";
 import "./Forecast.css";
 
 export default function ForecastIntro(props) {
-  const [forecast, setForecast] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [forecast, setForecast] = useState(null);
 
   function handleForecastResponse(response) {
     setForecast(response.data);
