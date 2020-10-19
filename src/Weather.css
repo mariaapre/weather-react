@@ -43,9 +43,9 @@
   text-align: center;
 }
 .Weather .col-2 canvas {
-  width: 100%;
+  width: 90px;
+  height: 60px;
   display: inline-block;
-  margin-right: 10px;
 }
 
 .Weather .units {

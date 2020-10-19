@@ -27,20 +27,21 @@ export default function MainWeather(props) {
           </ul>
         </div>
         <div className="col-6">
-          <div className="rounded-circle">
-            <WeatherIcon code={props.data.icon} />
+          <div className="float-left">
+            <WeatherIcon code={props.data.icon} />{" "}
           </div>
           <TemperatureUnits celsius={props.data.temperature} />
-
-          <ul>
-            <li className="text-capitalize">{props.data.description}</li>
-            <li>
-              Sunrise: <span>{props.data.sunrise}</span>
-            </li>
-            <li>
-              Sunset: <span>{props.data.sunset}</span>
-            </li>
-          </ul>
+          <div className="float-left">
+            <ul>
+              <li>{props.data.description}</li>
+              <li>
+                Sunrise: <span>{props.data.sunrise}</span>
+              </li>
+              <li>
+                Sunset: <span>{props.data.sunset}</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <h4>Weekly forecast:</h4>
