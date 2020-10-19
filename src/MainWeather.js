@@ -1,6 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
+
 import TemperatureUnits from "./TemperatureUnits";
 
 export default function MainWeather(props) {
@@ -31,14 +32,14 @@ export default function MainWeather(props) {
             <WeatherIcon code={props.data.icon} />{" "}
           </div>
           <TemperatureUnits celsius={props.data.temperature} />
-          <div className="float-left">
+          <div className="float-center">
             <ul>
               <li>{props.data.description}</li>
               <li>
-                Sunrise: <span>{props.data.sunrise}</span>
+                Sunrise: <span className="hour">{props.data.sunrise} </span>
               </li>
               <li>
-                Sunset: <span>{props.data.sunset}</span>
+                Sunset: <span className="hour">{props.data.sunset}</span>
               </li>
             </ul>
           </div>

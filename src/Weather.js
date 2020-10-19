@@ -18,11 +18,27 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       icon: response.data.weather[0].icon,
-      sunrise: response.data.sys.sunrise,
-      sunset: response.data.sys.sunset,
+      sunrise: formatHours(response.data.sys.sunrise * 1000),
+      sunset: formatHours(response.data.sys.sunset * 1000),
       temperature: response.data.main.temp,
-      wind: response.data.wind.speed,
+      wind: Math.round(response.data.wind.speed),
     });
+  }
+
+  function formatHours(timestamp) {
+    let date = new Date(timestamp);
+    let hours = date.getHours();
+
+    if (hours < 10) {
+      hours = `0${hours}`;
+    }
+
+    let minutes = date.getMinutes();
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
+    }
+
+    return `${hours}:${minutes}`;
   }
   function search() {
     const apiKey = "bd8ecef3a5464b3533486b9092216486";
