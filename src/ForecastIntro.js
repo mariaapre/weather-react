@@ -4,8 +4,8 @@ import axios from "axios";
 import "./Forecast.css";
 
 export default function ForecastIntro(props) {
-  const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+  const [loaded, setLoaded] = useState(false);
 
   function handleForecastResponse(response) {
     setForecast(response.data);
@@ -25,7 +25,7 @@ export default function ForecastIntro(props) {
     );
   } else {
     let apiKey = "bd8ecef3a5464b3533486b9092216486";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
     axios.get(url).then(handleForecastResponse);
     return null;
   }
