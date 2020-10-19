@@ -10,7 +10,7 @@
 }
 
 .Weather strong {
-  color: rgb(33, 33, 33);
+  color: #fff;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -18,8 +18,8 @@
 
 .Weather .btn.btn-primary {
   color: #fff;
-  background-color: #fddb92;
-  border-color: #fddb92;
+  background-color: #106b18;
+  border-color: #106b18;
 }
 .Weather .btn.btn-primary:hover {
   color: #fff;
@@ -29,8 +29,8 @@
 
 .Weather .btn.btn-light {
   color: #fff;
-  background-color: #fddb92;
-  border-color: #fddb92;
+  background-color: #106b18;
+  border-color: #106b18;
 }
 
 .Weather .btn.btn-light:hover {
@@ -56,7 +56,8 @@
   max-width: 600px;
 }
 .Weather .weather-app {
-  border: 2px solid #fddb92;
+  background-color: #081613;
+  border: 2px solid #106b18;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   height: auto;
@@ -88,7 +89,7 @@
 }
 
 .Weather .units .active {
-  color: rgb(33, 33, 33);
+  color: #fff;
   cursor: default;
 }
 .Weather .units .active:hover {
