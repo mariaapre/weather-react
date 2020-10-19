@@ -10,7 +10,7 @@ export default function ForecastRow(props) {
 
   function temperature() {
     let temperature = Math.round(props.data.main.temp);
-    return `${temperature}`;
+    return `${temperature}°C`;
   }
 
   return (

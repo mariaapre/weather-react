@@ -1,0 +1,8 @@
+.ForecastIntro {
+  text-align: center;
+}
+
+.ForecastIntro canvas {
+  display: block;
+  margin: 10px auto;
+}
