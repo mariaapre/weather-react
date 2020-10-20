@@ -29,7 +29,7 @@ export default function MainWeather(props) {
         </div>
         <div className="col-6">
           <div className="float-left">
-            <WeatherIcon code={props.data.icon} />{" "}
+            <WeatherIcon code={props.data.icon} />
           </div>
           <TemperatureUnits celsius={props.data.temperature} />
           <div className="float-center">
