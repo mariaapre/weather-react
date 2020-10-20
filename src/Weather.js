@@ -10,6 +10,7 @@ import "./App.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -57,10 +58,12 @@ export default function Weather(props) {
 
   function actualLocation(position) {
     let apiKey = "bd8ecef3a5464b3533486b9092216486";
-    let lat = position.coords.latitude;
-    let lon = position.coords.longitude;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-    axios.get(apiUrl).then(Weather);
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(handleResponse);
+
+    apiUrl = `https://api.opedisplayForecastnweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function getCurrentPosition(event) {
